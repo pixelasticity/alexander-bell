@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 54 54">
+    <path fill="#719f2a" d="M34.7 34.8a1.3 1.3 0 0 1-1.3 1.3H20.6a1.3 1.3 0 0 1-1.3-1.3v-7.7a1.3 1.3 0 0 1 1.3-1.3h.4v-2.5a6 6 0 0 1 12 0v2.5h.4a1.3 1.3 0 0 1 1.3 1.3v7.7zm-4.3-9v-2.5a3.4 3.4 0 0 0-6.8 0v2.5h6.8z"/>
+    <circle cx="27" cy="27.1" r="26" fill="none" stroke="#538200" stroke-miterlimit="10"/>
+</svg>
