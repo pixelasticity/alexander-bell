@@ -18,6 +18,42 @@
     padding-top: 1.5rem;
     border-image: linear-gradient(to left, #00C853, #B2FF59) 1;
   }
+  dl::before,
+  dl::after {
+    content: ' ';
+    display: table;
+  }
+  dl::after {
+    clear: both;
+  }
+  dt {
+    min-width: 5.636em;
+    float: left;
+    clear: left;
+    text-transform: uppercase;
+    color: #005ea2;
+    font-weight: bold;
+  }
+  dd {
+    float: left;
+    clear: right;
+    margin-left: 0;
+  }
+  ul.usa-list--unstyled {
+    margin-left: 2em;
+    padding: 1em 0;
+  }
+  ul.usa-list--unstyled > li::before {
+    content: "\2022";
+    color: #194480;
+    font-weight: bold;
+    display: inline-block;
+    width: .5em;
+    margin-left: -.5em;
+    font-size: 3em;
+    line-height: .3333;
+    vertical-align: text-top;
+  }
   .usa-social-link--instagram {
     background-image: url(img/social-icons/instagram24.svg),-webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent));
     background-image: url(img/social-icons/instagram24.svg),linear-gradient(transparent,transparent);
@@ -43,22 +79,25 @@
             alt="close"></button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false"
-              aria-controls="extended-nav-section-one"><span>About</span></button>
-            <ul id="extended-nav-section-one" class="usa-nav__submenu">
-              <li class="usa-nav__submenu-item">
-                <a href="#about">Navigation link</a>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-            </ul>
+            <a class="usa-nav__link usa-current" href="#about"><span>About</span></a>
           </li>
           <li class="usa-nav__primary-item">
-            <a class="usa-nav__link" href="#positions"><span>Positions</span></a>
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+              aria-controls="extended-nav-section-one"><span>Positions</span></button>
+            <ul id="extended-nav-section-one" class="usa-nav__submenu">
+              <li class="usa-nav__submenu-item">
+                <a href="#positions">Housing</a>
+              </li>
+              <li class="usa-nav__submenu-item">
+                <a href="#positions">Safety</a>
+              </li>
+              <li class="usa-nav__submenu-item">
+                <a href="#positions">Transportation</a>
+              </li>
+              <li class="usa-nav__submenu-item">
+                <a href="#positions">Community</a>
+              </li>
+            </ul>
           </li>
           <li class="usa-nav__primary-item">
             <a class="usa-nav__link" href="#voting"><span>Voting</span></a>
@@ -199,11 +238,14 @@
               <h3 id="positions" class="usa-graphic-list__heading">Voting.</h3>
               <div class="h-event">
               <h4 class="p-name">Palms Neighborhood Council election</h4>
-              <p>When: <time class="dt-start" datetime="2019-06-02 10:00">June 2<sup>nd</sup> 2019, 10:00 am</time>
-                to <time class="dt-end" datetime="2019-06-02 16:00">4:00 pm</time><br>
-                Where: <span class="p-location h-adr"><abbr title="Iranian-American Muslim Association of North America">IMAN</abbr> Center
-  <span class="p-street-address">3376 Motor Avenue</span>, <span class="p-locality">Los Angeles</span></span>.</p>
-              <ul class="p-summary usa-list">
+              <dl>
+                <dt>When:</dt>
+                <dd><time class="dt-start" datetime="2019-06-02 10:00"><strong>June 2<sup>nd</sup> 2019</strong>, 10:00 am</time>&ndash;<time class="dt-end" datetime="2019-06-02 16:00">4:00 pm</time></dd>
+                
+                <dt>Where:</dt>
+                <dd><span class="p-location h-adr"><strong><abbr title="Iranian-American Muslim Association of North America">IMAN</abbr> Center</strong> <span class="p-street-address">3376 Motor Avenue</span>, <span class="p-locality">Los Angeles</span></span>.</dd>
+              </dl>
+              <ul class="p-summary usa-list usa-list--unstyled">
                 <li>If you have a stake in Palms (e.g., you live, work, worship, or otherwise have an on-going community interest in Palms) and are 14 years or older, you can vote.</li>
                 <li>You <em>do not</em> need to be a US Citizen to vote in the Palms Neighborhood Council elections.</li>
               </ul>
