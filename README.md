@@ -1,2 +1,2 @@
 # Alexander Bell
-## for Palms Neighborhood Council Vice President
+## A Los Angeles-based front-end web developer
